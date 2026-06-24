@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Airports - SkyLanka Airways</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="airports">
+<nav class="navbar">
+    <a class="brand" href="admin-dashboard.html">SkyLanka Airways</a>
+    <div class="nav-links">
+        <a href="flights.html">Flights</a>
+        <a href="bookings.html">Bookings</a>
+        <button type="button" data-logout>Logout</button>
+    </div>
+</nav>
+
+<main class="container">
+    <h1>Airports</h1>
+    <form id="airportForm" class="form-row">
+        <input id="code" placeholder="Code" maxlength="10" required>
+        <input id="name" placeholder="Airport name" required>
+        <input id="city" placeholder="City" required>
+        <button type="submit">Save</button>
+    </form>
+
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th>City</th>
+        </tr>
+        </thead>
+        <tbody id="airportTable"></tbody>
+    </table>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

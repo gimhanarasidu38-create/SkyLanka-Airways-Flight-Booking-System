@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookings - SkyLanka Airways</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="bookings">
+<nav class="navbar">
+    <a class="brand" href="admin-dashboard.html">SkyLanka Airways</a>
+    <div class="nav-links">
+        <a href="airports.html">Airports</a>
+        <a href="flights.html">Flights</a>
+        <button type="button" data-logout>Logout</button>
+    </div>
+</nav>
+
+<main class="container">
+    <h1>Bookings</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Passenger</th>
+            <th>Email</th>
+            <th>Seat</th>
+            <th>Status</th>
+        </tr>
+        </thead>
+        <tbody id="bookingTable"></tbody>
+    </table>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>

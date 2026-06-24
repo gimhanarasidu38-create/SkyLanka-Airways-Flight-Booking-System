@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard - SkyLanka Airways</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="dashboard">
+<nav class="navbar">
+    <a class="brand" href="admin-dashboard.html">SkyLanka Airways</a>
+    <div class="nav-links">
+        <a href="airports.html">Airports</a>
+        <a href="flights.html">Flights</a>
+        <a href="bookings.html">Bookings</a>
+        <button type="button" data-logout>Logout</button>
+    </div>
+</nav>
+
+<main class="container">
+    <h1>Dashboard</h1>
+    <section class="dashboard">
+        <article class="card">
+            <span>Total Airports</span>
+            <strong id="airportCount">0</strong>
+        </article>
+        <article class="card">
+            <span>Total Flights</span>
+            <strong id="flightCount">0</strong>
+        </article>
+        <article class="card">
+            <span>Total Bookings</span>
+            <strong id="bookingCount">0</strong>
+        </article>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
